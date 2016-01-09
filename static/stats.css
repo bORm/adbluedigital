@@ -1,0 +1,58 @@
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+}
+td,
+th {
+  padding: 2px 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border: 1px solid #ddd;
+}
+th {
+  background: #cdcccd;
+}
+tr.date td {
+  background: #00cdcb;
+}
+tr.country td {
+  background: #e7e7ff;
+}
+td,
+tr.country td:first-child {
+  background: white;
+}
+
+tr.carrier td:first-child,
+tr.carrier td:first-child + td {
+  background: white;
+}
+tr:hover td {
+  background: #ddd;
+}
+@media print {
+  table {
+    border-collapse: collapse !important;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr {
+    page-break-inside: avoid;
+  }
+  td,
+  th {
+    background-color: #fff !important;
+    border: 1px solid #ddd !important;
+  }
+}
+.hidden{
+  display: none;
+}
